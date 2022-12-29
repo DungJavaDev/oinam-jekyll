@@ -1,8 +1,15 @@
 <ul>
-  {%- for post in site.posts limit: site.layout.home_posts_no -%}
+  {%- for post in site.posts -%}
+  {% if post.path contains 'games' %}
   <li>
-    <a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a>
-    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+    <a style="color: #5dca03;font-weight: bold" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">
+    <img src="{{ post.image }}" alt="{{ post.title }}" align="left">
+    {{ post.title }}
+    </a>
+    <br> {{ post.description }}
+    <br clear="all">
   </li>
-  {%- endfor -%}
+  {% endif %}
+  {% endfor %}
 </ul>
+

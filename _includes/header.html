@@ -1,5 +1,12 @@
 <header class="header">
-  <h1><a href="{{ site.baseurl | prepend: site.url }}/" title="{{ site.title }}">{{ site.title }}</a></h1>
-  {% if site.description %}<h2>{{ site.description | escape }}</h2>{% endif %}
-  {% include nav.html %}
+  <a href="{{ site.baseurl | prepend: site.url }}/" title="{{ site.title }}"
+    ><img
+      src="https://dotgears.com/logo_simplified.png"
+      alt="styled logo"
+      width="256"
+      height="256"
+  /></a>
+  {% if site.description %}
+  <h2 style="font-size: 12px;">{{ site.description | escape }}</h2>
+  {% endif %}
 </header>

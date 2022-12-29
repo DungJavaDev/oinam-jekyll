@@ -1,10 +1,10 @@
-title: Oinam Jekyll
-description: A simple, clean, and minimal Jekyll Theme.
+title: DotGearClone
+description: \ Simply fun /
 
 # Set this to your domain; baseurl is for the folder in your domain, if you have one -- `blog`.
 # you can leave both of them blank if you are deploying on a top-level domain.
 url: https://oinam.github.io
-baseurl: /oinam-jekyll
+baseurl: ''
 
 # footer
 footer:
@@ -18,7 +18,7 @@ layout:
   theme: default # default, vintage, nord
   theme_highlighter: vs # default, more at css/highlighter (source: https://github.com/richleland/pygments-css)
   theme_switch: true # enable or disable user toggle switch between light and dark theme
-  home_posts_no: 6
+  home_posts_no: 7
   home_postheader_title: 'Recent posts'
   home_postmeta_title: 'View all'
   posts_home: /blog/
@@ -45,13 +45,27 @@ plugins:
  - jekyll-optional-front-matter # https://github.com/benbalter/jekyll-optional-front-matter
  - jekyll-titles-from-headings # https://github.com/benbalter/jekyll-titles-from-headings/
 
+# defaults:
+#   - scope:
+#       path: '_posts'
+#       type: 'posts'
+#     values:
+#       layout: 'post'
+#       permalink: '/:year/:title/'
+
 defaults:
   - scope:
       path: '_posts'
       type: 'posts'
     values:
       layout: 'post'
-      permalink: '/:year/:title/'
+      permalink: '/:title/'      
+  # - scope:
+  #     path: '_news'
+  #     type: 'news'
+  #   values:
+  #     layout: 'new'
+  #     permalink: '/:title/'         
 
 titles_from_headings:
   enabled: true

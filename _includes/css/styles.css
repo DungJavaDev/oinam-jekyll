@@ -24,7 +24,7 @@ body {
   flex: 1;
   
   margin: 0 auto;
-  padding: 0 var(--space-half);
+  padding: 0 var(--space-mini);
   max-width: var(--body-width);
   height: 100%;
   

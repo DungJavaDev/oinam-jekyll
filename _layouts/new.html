@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="post-meta">
+  <time datetime="{{ post.date | date: '%Y-%m-%d' }}"
+    >{{ page.date | date: '%a, %b %-d, %Y' }}</time
+  >
+  <span>{%- include read-time.html -%}</span>
+</div>
+
+<article>
+    <h1 style="font-weight: bold;font-size: 12px;">{{ page.title | escape }}</h1>
+    {{ content }}
+</article>
+
+<div class="post-nav">
+    <span></span>
+    <span></span>
+  </div>

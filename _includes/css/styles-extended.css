@@ -89,12 +89,12 @@ nav a:hover, nav a:active {
 
 /* larger screens */
 @media (min-width: $breakpoint-large) {
-  blockquote,
+  /* blockquote,
   .content-medium {
     margin-left: calc(-1 * var(--space-double));
     margin-right: calc(-1 * var(--space-double));
   }
-  
+   */
   .content-large,
   img.large,
   img.large + em {
@@ -196,6 +196,13 @@ img.full + em {
 
 
 /* pages */
+
+.page_title h1 {
+  font-size: large;
+}
+.page_content h3 {
+  font-size: calc(var(--font-size) * var(--typescale-body));
+}
 .home_posts {}
 
 .home_posts__title {
@@ -212,6 +219,63 @@ img.full + em {
   text-transform: lowercase;
 }
 
+.products-list :is(ul, ol) {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.products-list :is(ul, ol) li {
+  padding: 0 0 20px 0;
+  list-style: none;
+}
+
+.products-list :is(ul, ol) img {
+  width: 80px;
+  height: 80px;
+  border-radius: 32px;
+  margin-top: -2px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+.game_header {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.game_header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 32px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+.game_header span {
+  font-style: italic;
+}
+.game_header h1 {
+  font-weight: bold;
+  color: #5dca03;
+  font-size: 12px;
+}
+.game_content {
+  margin: 30px 10px 10px 10px;
+}
+.game_content img {
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.game_content_center {
+  text-align: center;
+}
+.game_content h1 {
+  font-size: large;
+  color: #5dca03;
+}
 
 /*
   articles/posts/pages lists

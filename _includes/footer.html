@@ -1,20 +1,21 @@
 <footer class="footer">
-  {% include nav.html %}
+
   <div class="footer__credit">
     <div>
       <p>
         {% if site.footer.custom != false %}
           <small>{{ site.footer_custom }}</small>
         {% else %}
-          <small>Copyright © {{ "now" | date: "%Y" }} {{ site.title }}.</small>
+          <small>Copyright © 2011 - {{ "now" | date: "%Y" }} {{ site.title }}.</small>
         {% endif %}
+        <br>
         {% if site.footer.credit != false %}
-          <small><a href="https://oinam.github.io/oinam-jekyll/" target="_blank">Oinam Jekyll</a>.</small>
+          <small>This website was made using <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> 
+            and <a href="https://vercel.com/" target="_blank">Vercel</a>.
+            Theme by <a href="https://oinam.github.io/oinam-jekyll/" target="_blank">Oinam Jekyll</a>.</small>
         {% endif %}
       </p>
     </div>
-    {% if site.layout.theme_switch != false %}
-      {% include appearance.html %}
-    {% endif %}
+
   </div>
 </footer>
